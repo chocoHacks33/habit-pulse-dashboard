@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habit Pulse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div><p class="eyebrow">LOCAL-FIRST DASHBOARD</p><h1>Habit Pulse</h1><p class="subtitle">A calm weekly view of the habits you want to keep.</p></div>
+      <button id="reset" class="ghost" type="button">Reset week</button>
+    </header>
+    <section class="summary" aria-label="Weekly summary">
+      <article><span class="label">Completion</span><strong id="completion">0%</strong><span id="completionNote">No check-ins yet</span></article>
+      <article><span class="label">Best streak</span><strong id="streak">0 days</strong><span>Across all habits</span></article>
+      <article><span class="label">Today</span><strong id="today">0 / 0</strong><span>Habits completed</span></article>
+    </section>
+    <section class="toolbar" aria-label="Habit controls">
+      <label>Show <select id="filter"><option value="all">All habits</option><option value="open">Needs attention</option><option value="done">Completed today</option></select></label>
+      <form id="addForm"><label class="sr-only" for="habitName">New habit</label><input id="habitName" maxlength="32" placeholder="Add a habit…" required><button type="submit">Add habit</button></form>
+    </section>
+    <section id="habitList" class="habit-list" aria-live="polite"></section>
+    <p class="privacy">Your data stays in this browser. No account or network connection required.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
