@@ -1,0 +1,1 @@
+export function weeklySummary(habits){const total=habits.reduce((sum,h)=>sum+h.done,0);const possible=habits.reduce((sum,h)=>sum+h.target,0);return {completed:total,possible,percent:possible?Math.round(total/possible*100):0};}
