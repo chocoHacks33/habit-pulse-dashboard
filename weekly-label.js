@@ -1,0 +1,1 @@
+export function weeklyLabel(date=new Date()){const d=new Date(date);const start=new Date(d);start.setDate(d.getDate()-d.getDay());return `Week of ${start.toLocaleDateString(undefined,{month:'short',day:'numeric'})}`;}
