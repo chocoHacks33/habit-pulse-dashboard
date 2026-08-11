@@ -1,0 +1,1 @@
+export function validateHabit(habit){const errors=[];if(!habit?.name?.trim())errors.push('Name is required');if(!Number.isInteger(habit?.target)||habit.target<1)errors.push('Target must be a positive integer');return errors;}
