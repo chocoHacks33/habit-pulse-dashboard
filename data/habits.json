@@ -1,0 +1,5 @@
+[
+  {"name":"Read","category":"learning","targetPerWeek":5,"completedThisWeek":4},
+  {"name":"Walk","category":"health","targetPerWeek":7,"completedThisWeek":6},
+  {"name":"Journal","category":"reflection","targetPerWeek":3,"completedThisWeek":2}
+]
