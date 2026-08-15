@@ -1,0 +1,15 @@
+:root {
+  --habit-surface: #ffffff;
+  --habit-surface-muted: #f4f7fb;
+  --habit-text: #172033;
+  --habit-accent: #2764d8;
+  --habit-success: #16845b;
+  --habit-radius: 12px;
+}
+
+[data-theme="dark"] {
+  --habit-surface: #172033;
+  --habit-surface-muted: #202b40;
+  --habit-text: #f4f7fb;
+  --habit-accent: #8fb3ff;
+}
