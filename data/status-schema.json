@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["habit", "completed"],
+  "properties": {
+    "habit": {"type": "string", "minLength": 1},
+    "completed": {"type": "boolean"},
+    "checkedAt": {"type": "string", "format": "date-time"}
+  }
+}
