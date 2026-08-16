@@ -1,0 +1,12 @@
+:root {
+  --focus-ring: #2563eb;
+}
+
+.focus-mode :where(button, a, input):focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+.focus-mode .secondary-metric {
+  opacity: 0.72;
+}
