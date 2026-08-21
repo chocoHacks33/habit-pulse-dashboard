@@ -1,0 +1,25 @@
+{
+  "fixtures": [
+    {
+      "name": "Morning walk",
+      "currentStreak": 5,
+      "longestStreak": 12,
+      "completedDates": [
+        "2026-08-17",
+        "2026-08-18",
+        "2026-08-19",
+        "2026-08-20",
+        "2026-08-21"
+      ]
+    },
+    {
+      "name": "Read 20 pages",
+      "currentStreak": 2,
+      "longestStreak": 8,
+      "completedDates": [
+        "2026-08-20",
+        "2026-08-21"
+      ]
+    }
+  ]
+}
