@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "exportedAt": "2026-08-21T00:00:00Z",
+  "habits": [
+    {
+      "id": "morning-walk",
+      "name": "Morning walk",
+      "frequency": "daily",
+      "archived": false,
+      "checkIns": [
+        {
+          "date": "2026-08-21",
+          "completed": true
+        }
+      ]
+    }
+  ]
+}
