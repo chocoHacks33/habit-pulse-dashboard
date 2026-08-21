@@ -1,0 +1,13 @@
+:root {
+  --completion-pending: #64748b;
+  --completion-in-progress: #2563eb;
+  --completion-complete: #15803d;
+  --completion-missed: #b91c1c;
+}
+
+.completion-status {
+  border-inline-start: 0.25rem solid var(--completion-pending);
+}
+
+.completion-status[data-status="complete"] { border-inline-start-color: var(--completion-complete); }
+.completion-status[data-status="missed"] { border-inline-start-color: var(--completion-missed); }
