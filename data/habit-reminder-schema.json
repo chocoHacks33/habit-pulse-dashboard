@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "reminder": {
+    "id": "reminder-001",
+    "habitId": "morning-walk",
+    "localTime": "08:00",
+    "daysOfWeek": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "enabled": true
+  }
+}
