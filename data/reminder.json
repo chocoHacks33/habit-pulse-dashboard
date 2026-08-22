@@ -1,0 +1,6 @@
+{
+  "habitId": "read-20-min",
+  "time": "20:00",
+  "days": ["MON", "WED", "FRI"],
+  "enabled": true
+}
