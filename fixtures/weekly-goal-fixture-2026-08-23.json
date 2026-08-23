@@ -1,0 +1,8 @@
+# Add representative weekly goal fixture data for UI review and manual QA.
+
+test: add weekly goal fixture
+
+## Review notes
+
+- Scope is intentionally limited to this concern.
+- Validate wording and integration points during review.
