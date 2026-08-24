@@ -1,0 +1,3 @@
+# Streak calculation
+
+A streak is the number of consecutive calendar days ending on the selected date where the habit was completed. A day counts once regardless of duplicate check-in events. If the selected date is incomplete, the current streak ends on the preceding completed day. Missing history is different from an explicit missed day and should be shown as unavailable rather than silently treated as a miss.
