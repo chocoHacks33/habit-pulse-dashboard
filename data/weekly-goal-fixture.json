@@ -1,0 +1,13 @@
+{
+  "weekStarting": "2026-08-24",
+  "target": 5,
+  "completed": 3,
+  "label": "Build a steady morning routine",
+  "days": [
+    {"date":"2026-08-24","completed":true},
+    {"date":"2026-08-25","completed":true},
+    {"date":"2026-08-26","completed":true},
+    {"date":"2026-08-27","completed":false},
+    {"date":"2026-08-28","completed":false}
+  ]
+}
