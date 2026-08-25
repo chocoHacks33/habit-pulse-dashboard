@@ -1,0 +1,5 @@
+[
+  {"id":"read","name":"Read","category":"learning","color":"blue"},
+  {"id":"walk","name":"Walk","category":"health","color":"green"},
+  {"id":"plan","name":"Plan tomorrow","category":"focus","color":"violet"}
+]
