@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "habits": [
+    {"id": "move", "name": "Move for 20 minutes", "target": 7, "completed": 5, "streak": 3},
+    {"id": "read", "name": "Read before bed", "target": 7, "completed": 0, "streak": 0},
+    {"id": "plan", "name": "Plan tomorrow", "target": 7, "completed": 7, "streak": 7}
+  ]
+}
