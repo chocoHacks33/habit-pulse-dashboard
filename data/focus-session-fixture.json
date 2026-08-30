@@ -1,0 +1,7 @@
+{
+  "sessions": [
+    { "id": "focus-001", "startedAt": "2026-08-29T09:00:00Z", "durationMinutes": 25, "label": "Planning" },
+    { "id": "focus-002", "startedAt": "2026-08-29T14:30:00Z", "durationMinutes": 50, "label": "Deep work" },
+    { "id": "focus-003", "startedAt": "2026-08-30T08:15:00Z", "durationMinutes": 25, "label": "Review" }
+  ]
+}
