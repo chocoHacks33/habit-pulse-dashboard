@@ -1,0 +1,4 @@
+{
+  "weekStart": "2026-08-24",
+  "days": [{"date":"2026-08-24","completed":3,"scheduled":4},{"date":"2026-08-25","completed":2,"scheduled":4},{"date":"2026-08-26","completed":4,"scheduled":4},{"date":"2026-08-27","completed":1,"scheduled":4},{"date":"2026-08-28","completed":3,"scheduled":4},{"date":"2026-08-29","completed":4,"scheduled":4},{"date":"2026-08-30","completed":2,"scheduled":4}]
+}
