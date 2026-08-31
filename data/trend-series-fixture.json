@@ -1,0 +1,5 @@
+{
+  "metric": "completion_rate",
+  "unit": "percent",
+  "points": [{"label":"Mon","value":75},{"label":"Tue","value":50},{"label":"Wed","value":100},{"label":"Thu","value":25},{"label":"Fri","value":75},{"label":"Sat","value":100},{"label":"Sun","value":50}]
+}
