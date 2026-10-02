@@ -16,7 +16,7 @@ function render(){
   if(!visible.length){list.innerHTML='<div class="empty"><strong>No habits match this view.</strong><br>Try another filter or add a new habit.</div>';return}
   visible.forEach(h=>{const i=habits.indexOf(h);const row=document.createElement('article');row.className=`habit ${isDone(h)?'done':''}`;row.innerHTML=`<button class="check" type="button" aria-label="${isDone(h)?'Uncheck':'Check'} ${h.name}">${isDone(h)?'✓':'○'}</button><div class="habit-copy"><div class="habit-name"></div><div class="habit-meta">${h.days.length} check-in${h.days.length===1?'':'s'} this week</div></div><button class="delete" type="button">Remove</button>`;row.querySelector('.habit-name').textContent=h.name;row.querySelector('.check').onclick=()=>{h.days=isDone(h)?h.days.filter(d=>d!==todayKey()):[...h.days,todayKey()];save();render()};row.querySelector('.delete').onclick=()=>{habits.splice(i,1);save();render()};list.append(row)})
 }
-document.querySelector('#addForm').onsubmit=e=>{e.preventDefault();const input=document.querySelector('#habitName');habits.push({name:input.value.trim(),days:[]});input.value='';save();render()};
+document.querySelector('#addForm').onsubmit=e=>{e.preventDefault();const input=document.querySelector('#habitName'),name=input.value.trim();if(!name)return;habits.push({name,days:[]});input.value='';save();render();input.focus()};
 document.querySelector('#filter').onchange=render;
 document.querySelector('#reset').onclick=()=>{if(confirm('Clear this week\'s check-ins?')){habits.forEach(h=>h.days=[]);save();render()}};
 render();
