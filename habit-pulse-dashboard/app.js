@@ -19,4 +19,8 @@ function render(){
 document.querySelector('#addForm').onsubmit=e=>{e.preventDefault();const input=document.querySelector('#habitName');habits.push({name:input.value.trim(),days:[]});input.value='';save();render()};
 document.querySelector('#filter').onchange=render;
 document.querySelector('#reset').onclick=()=>{if(confirm('Clear this week\'s check-ins?')){habits.forEach(h=>h.days=[]);save();render()}};
+document.querySelector('#export').onclick=()=>{
+  const blob=new Blob([JSON.stringify(habits,null,2)],{type:'application/json'});
+  const link=document.createElement('a');link.href=URL.createObjectURL(blob);link.download='habit-pulse-data.json';link.click();URL.revokeObjectURL(link.href);
+};
 render();
