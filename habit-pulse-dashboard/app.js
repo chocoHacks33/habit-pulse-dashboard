@@ -19,4 +19,9 @@ function render(){
 document.querySelector('#addForm').onsubmit=e=>{e.preventDefault();const input=document.querySelector('#habitName');habits.push({name:input.value.trim(),days:[]});input.value='';save();render()};
 document.querySelector('#filter').onchange=render;
 document.querySelector('#reset').onclick=()=>{if(confirm('Clear this week\'s check-ins?')){habits.forEach(h=>h.days=[]);save();render()}};
+document.addEventListener('keydown',e=>{
+  if(e.key==='/'&&document.activeElement?.tagName!=='INPUT'&&document.activeElement?.tagName!=='TEXTAREA'){
+    e.preventDefault();document.querySelector('#habitName').focus();
+  }
+});
 render();
