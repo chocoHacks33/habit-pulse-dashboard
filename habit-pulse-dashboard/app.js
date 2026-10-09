@@ -1,7 +1,13 @@
 const seed = [{name:'Move for 20 minutes',days:[]},{name:'Read 10 pages',days:[]},{name:'Plan tomorrow',days:[]}];
 const key='habit-pulse-v1';
 let habits=JSON.parse(localStorage.getItem(key)||'null')||seed;
-const todayKey=()=>new Date().toISOString().slice(0,10);
+const todayKey=()=>{
+  const now=new Date();
+  const year=now.getFullYear();
+  const month=String(now.getMonth()+1).padStart(2,'0');
+  const day=String(now.getDate()).padStart(2,'0');
+  return `${year}-${month}-${day}`;
+};
 const save=()=>localStorage.setItem(key,JSON.stringify(habits));
 const isDone=h=>h.days.includes(todayKey());
 function render(){
