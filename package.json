@@ -1,0 +1,7 @@
+{
+  "name": "habit-pulse-dashboard",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}
